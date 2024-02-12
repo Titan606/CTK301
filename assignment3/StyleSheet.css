@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+}
+
+p {
+    background-color: #8B0000;
+    color: yellow;
+}
+
+a {
+    color: red;
+}
+a:link{
+    color:red;
+}
+a:active{
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: yellow;
+}
+
+
+h1 {
+    background-color: black;
+    color: #8B0000;
+}
+
+h2 {
+    background-color: rosybrown;
+    color: orange;
+}
+
+h3 {
+    background-color: brown;
+    color: pink;
+}
+
+h4 {
+    background-image: url("requirements.jpg");
+    color: blue;
+}
+
+#square{
+    border: 5px outset #8B0000;
+    background-color: red;
+    text-align: center;
+    color: yellow;
+}
+
+.special {
+    border: 100px yellow;
+    text-align: center;
+    text-shadow: orange;
+    background-color: black;
+}
+
+#special{
+    border:5px outset white;
+    background-color: black;
+    color: aqua;
+
+}
