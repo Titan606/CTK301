@@ -1,0 +1,57 @@
+#box{
+    background-color: purple;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    color:green;
+    text-decoration:none;
+}
+a:active{
+    color: green;
+}
+a:visited{
+    color: green;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+h2 {
+    color: darkmagenta;
+}
+
+#bold {
+    color: orange;
+}
+
+h3 {
+    background-color: yellow;
+}
+
+h4{
+    background-color: green;
+    color: white;
+}
+
+h5{
+    color: red;
+}
+
+#taxi {
+    color: red;
+}
+
+#art{
+    background-color: lime;
+}
+#daughter{
+    background-color: yellow;
+}
+#doctor{
+    color: blue;
+}
