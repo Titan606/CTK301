@@ -1,0 +1,72 @@
+body {
+    background-image: url("a5bg.png");
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+p { 
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+#footer {
+    border: 5px solid white;
+    padding: 30px;
+    margin: 20px;
+    font-style: italic;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    width: 200px;
+    padding: 0px;
+    margin-right: 10px;
+    background-color:darkblue;
+    color:white;
+}
+
+nav li a {
+    color: white;
+    padding: 20px;
+    background-color: darkblue;
+    display: block;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+.whitebox {
+    background-color: white;
+    padding: 18px;
+    margin: 10px;
+}
