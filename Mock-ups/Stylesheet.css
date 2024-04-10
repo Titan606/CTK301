@@ -1,0 +1,160 @@
+#background {
+    background-image: url("bluemarble.jpeg");
+    width: min-content;
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 8fr;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+}
+h3 {
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+}
+
+#leftnav{
+    grid-column: 2fr;
+    grid-row: 1fr;
+    width: max-content;
+    padding-right: 25px;
+    padding-left: 25px;
+    align-content: center;
+}
+#leftnav a{
+    background-color: navy;
+    border: 5px solid gold;
+    text-decoration: none;
+    color: gold;
+    padding: 25px;
+
+    text-align: center;
+}
+#leftnav a:hover{
+    color: whitesmoke;
+}
+
+#midheader {
+    background-color: navy;
+    border-left: 5px solid gold;
+    border-right: 5px solid gold;
+    border-top: 5px solid gold;
+    width: max-content;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    grid-column: 8fr;
+    grid-row: 1fr;
+}
+
+#rightnav {
+    grid-column: 2fr;
+    grid-row: 1fr;
+    width: max-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-content: center;
+}
+#rightnav a{
+    background-color: navy;
+    border: 5px solid gold;
+    text-decoration: none;
+    padding: 25px;
+text-align: center;
+    color: gold;
+}
+#rightnav a:hover {
+    color: whitesmoke;
+}
+main {
+    background-color: rgb(79, 79, 150);
+    grid-column: span 8;
+    grid-row: span 6;
+    text-align: justify;
+}
+#subheader{
+    grid-column: span 12;
+    grid-row: 50px;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+    background-color: navy;
+    text-align: center;
+    opacity: 75%;
+}
+
+img {
+    width: 300px;
+    height: 600px;
+}
+
+#leftbanner {
+    grid-column: span 2;
+    grid-row: span 6;
+}
+
+
+#photos{
+    grid-column: span 4;
+    align-content: center;
+}
+
+#photos img {
+    width: 200px;
+    height: 175px;
+}
+
+#photos ul {
+    list-style: none;
+}
+#photos li {
+    display: inline;
+    padding: 50px;
+}
+
+#circle {
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+}
+
+#chicken {
+    background-color: blue;
+}
+
+#description{
+    grid-column: span 4;
+}
+
+#description p {
+margin-left: 25px;
+margin-right: 25px;
+font-family: Verdana, Tahoma, sans-serif;
+color: whitesmoke;
+}
+
+
+#rightbanner {
+    grid-column: span 2;
+    grid-row: span 6;
+}
+#rightbanner img {
+    width: 200px;
+    height: 600px;
+}
+
+footer {
+    grid-column: span 6;
+    grid-row: span 1;
+    background-color: navy;
+    margin-left: 300px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
