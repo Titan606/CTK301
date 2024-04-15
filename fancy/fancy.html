@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fancy Example</title>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" /> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Old+Persian&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/rfx0quk.css">
+
+
+<link rel="stylesheet" href="fancy.css">
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Fancy Example</h1>
+  <a href="patch.jpg" data-fancybox="gallery" data-caption="Patch">
+    <img src="patch_thumb.jpg">
+  </a>
+  <a href="icecream.jpg" data-fancybox="gallery" data-caption="Icecream">
+    <img src="icecream_thumb.jpg">
+  </a>
+  <a href="water.jpg" data-fancybox="gallery" data-caption="water">
+    <img src="water_thumb.jpg">
+  </a>
+
+  <div id="myCarousel" class="f-carousel">
+    <div class="f-carousel__slide"><img src="patch.jpg"></div>
+    <div class="f-carousel__slide"><img src="icecream.jpg"></div>
+    <div class="f-carousel__slide"><img src="water.jpg"></div>
+  </div>
+
+  <a href="water.jpg" data-fancybox="gallery2" data-caption="water">
+    <img src="water_thumb.jpg">
+  </a>
+  <a href="icecream.jpg" data-fancybox="gallery2" data-caption="Icecream">
+    <img src="icecream_thumb.jpg">
+  </a>
+  <a href="patch.jpg" data-fancybox="gallery2" data-caption="Patch">
+    <img src="patch_thumb.jpg">
+  </a>
+  <a href="milk.gif" data-fancybox="gallery2" data-caption="Milk">
+    <img src="icecream_thumb.jpg">
+  </a>
+
+  <div id="Carousel" class="f-carousel">
+    <div class="f-carousel__slide"><img src="patch.jpg"></div>
+    <div class="f-carousel__slide"><img src="icecream.jpg"></div>
+    <div class="f-carousel__slide"><img src="water.jpg"></div>
+    <div class="f-carousel__slide"><img src="milk.gif"></div>
+  </div>
+
+  </div>
+<script>
+  Fancybox.bind("[data-fancybox]",{});
+
+  const container = document.getElementById("myCarousel");
+  const options = { infinite: true };
+
+  new Carousel(container, options);
+
+  const container2 = document.getElementById("Carousel");
+  const options2 = { infinite: false };
+
+  new Carousel(container2, options2);
+</script>
+
+</body>
+</html>

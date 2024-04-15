@@ -1,0 +1,41 @@
+body {
+  background-color: darkred;
+}
+
+#wrapper {
+  margin: 1em auto;
+  width: 960px;
+  border: 3px solid rgb(191, 92, 191);
+  background-color: darkmagenta;
+  padding: 1em;
+  color: pink;
+}
+
+#myCarousel {
+  margin-bottom: 24px;
+}
+
+#myCarousel .f-carousel__slide {
+  text-align: center;
+  padding: 24px;
+  background: rgb(159, 18, 98);
+}
+
+#Carousel {
+  margin-bottom: 24px;
+}
+
+#Carousel .f-carousel__slide {
+  text-align: center;
+  padding: 24px;
+  background: rgb(159, 18, 98);
+}
+
+h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: gold;
+  text-align: center;
+}
+
