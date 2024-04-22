@@ -14,7 +14,7 @@ h1 {
         font-family: "Bungee Spice", sans-serif;
         font-weight: 400;
         font-style: normal;
-    color: gold;
+    color: white;
 }
 h3 {
     font-weight: bold;
@@ -130,27 +130,41 @@ img {
 
 #alien {
     box-shadow: 10px 10px 10px lime;
+    border: 3px solid lime;
 }
 
 #circle {
-    padding: 10px;
+   border: 3px solid gold;
     width: 250px;
     height: 250px;
     border-radius: 500px;
+    box-shadow: 5px 10px 10px gold;
 }
 
 #chicken {
     background-color: blue;
     box-shadow: -10px 10px 10px lightblue;
+    border: 3px solid lightblue;
+    border-radius: 500px 500px 145px 145px ;
 }
+
+#myCarousel {
+    margin-bottom: 24px;
+  }
+  
+#myCarousel .f-carousel__slide {
+    text-align: center;
+    padding: 24px;
+    background: rgb(56, 56, 148);
+  }
 
 #description{
     grid-column: span 4;
 }
 
 #description p {
-margin-left: 25px;
-margin-right: 25px;
+margin-left: 100px;
+margin-right: 100px;
 font-family: Verdana, Tahoma, sans-serif;
 color: whitesmoke;
 }
@@ -163,6 +177,7 @@ color: whitesmoke;
 footer {
     grid-column: span 8;
     background-color: navy;
+    color: royalblue;
     grid-column-start: 3;
     grid-column-end: 11;
     text-align: center;
