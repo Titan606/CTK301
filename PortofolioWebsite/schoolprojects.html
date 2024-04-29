@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Old+Persian&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/rfx0quk.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" /> 
+
+
+    <title>Home Page</title>
+  </head>
+  <body>
+<div id="background">
+    <div id="leftnav"> 
+        <h3><a href="Personalprojects.html" rel="link">PERSONAL WORK</a></h3>
+    </div>
+
+<div id="midheader">
+    <h1>SCHOOL PROJECT</h1>
+</div>
+
+    <div id="rightnav"> 
+        <h3><a href="Homepage.html" rel="link">HOMEPAGE</a></h3>
+    </div>
+
+ <div id="subheader">
+        <h3>GRAPHIC DESIGN        HTML   JAVASCRIPT    GAME    DESIGN       C#   CSS</h3>
+ </div>
+
+
+<main id="school">
+
+    <div id="description2">
+        <p class="intro">Here are some of the few school projects I have done during the time period of 2020 until now. My projects are varied in that some can be categorized as graphic design focused, due to my initial start in graphic design and some others a varity of game design projects, virtual and physical alike, with of course some sprinkle of miscellanous projects that pertain to my field; like sound editing: </p>
+        <div id="photos">
+            <div id="Carousel" class="f-carousel">
+                <div class="f-carousel__slide"><img id="alien" src="invaders.jpg"></div>
+                <div class="f-carousel__slide"><img id="circle" src="me.jpg"></div>
+                <div class="f-carousel__slide"><img id="chicken" src="chicken.gif"></div>
+            </div>        
+        </div>
+        <p id="projectedtext"> Description of the project(s), hopefully that switch with the picture. </p>
+    </div>
+
+</main>
+
+
+
+
+    <footer>
+
+        <h3><a href="Contacts.html" rel="link">CONTACTS, TRISTAN COPYRIGHT INC</a></h3>
+
+    </footer>
+
+</div>
+
+<script>   
+    Fancybox.bind("[data-fancybox]", {});
+
+    const container = document.getElementById("Carousel");
+    const options = { infinite: false };
+    new Carousel(container, options);
+
+</script>
+  </body>
+</html>
