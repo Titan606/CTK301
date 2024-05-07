@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Old+Persian&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/rfx0quk.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" /> 
+
+
+    <title>Home Page</title>
+  </head>
+  <body>
+<div id="background">
+    <div id="leftnav"> 
+        <h3><a href="Personalprojects.html" rel="link">PERSONAL WORK</a></h3>
+    </div>
+
+<div id="midheader">
+    <h1>TRISTAN'S WEBSITE</h1>
+</div>
+
+    <div id="rightnav"> 
+        <h3><a href="schoolprojects.html" rel="link">SCHOOL WORK</a></h3>
+    </div>
+
+ <div id="subheader">
+        <h3>GRAPHIC DESIGN        HTML   JAVASCRIPT    GAME    DESIGN       C#   CSS</h3>
+ </div>
+
+    <div id="lefbanner">
+            <img src="forest.gif" alt="water">
+    </div>
+<main>
+    <div class="song">
+        <div class="title">Swan Lake, Op. 20, Act 2: Scene (Moderato), by Pyotr Ilyich Tchaikovsky</div>
+        <div class="pause" onclick="togglePlay()">🔇</div>
+        <div class="player">
+            <audio class="audio" src="SwanLake.mp3" autoplay type="audio" loop=""></audio>
+        </div>
+    
+    </div>
+    <div id="photos">
+        <div id="carousel">
+            <figure id="spinner">
+              <img src="controler.jpg" alt>
+              <img src="hardmode.png" alt>
+              <img src="gamedesign1.jpg" alt>
+              <img src="personal.jpg" alt>
+              <img src="sketche.jpg" alt>
+              <img src="skin.jpg" alt>
+              <img src="hardmode.png" alt>
+              <img src="artpicture.jpg" alt>
+            </figure>
+        </div>
+          <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+          <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>       
+    </div>
+    <div id="description">
+        <p id="aboutme"> Chemical Engineer aspirant turned Game Designer, I have had quick the roller coaster in life; being in the National Guard adding excitement in a monthly basis. 
+        <br>
+        I was born in Paris, France, where I grew up and lived until I moved to New York, USA then finally to Illinois USA where I currently reside.
+        <br>
+        Recently started dipping my toes in Game Designing, here is a website with some of my projects, whether school or personal.
+        If you wish to contact me about anything whether you feel I may have offended your eyes with my projects or on the contrary feel curious about how I ended up making my projects work, please click the link "CONTACTS" at the bottom of the page showing you where to contact me.
+        </p>
+    </div>
+</main>
+<div id="rightbanner">
+        <img src="forest.gif" alt="cool view">
+</div>
+
+
+
+    <footer>
+
+        <h3><a href="Contacts.html" rel="link">CONTACTS, TRISTAN COPYRIGHT INC</a></h3>
+
+    </footer>
+
+</div>
+
+<script>   
+    var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+
+var pause = document.querySelector(".pause");
+var audio = document.querySelector(".audio");
+
+function togglePlay() {
+	if (audio.paused) {
+		audio.play();
+		pause.innerHTML = "🔇";
+	} else {
+		audio.pause();
+		pause.innerHTML = "🔊";
+		pause.style.color = " #848484";
+	}
+}
+
+
+</script>
+  </body>
+</html>
