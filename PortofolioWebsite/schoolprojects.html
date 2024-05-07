@@ -37,17 +37,29 @@
 
 
 <main id="school">
-
+    <div class="song">
+        <div class="title">BUNT x VisionV Renaissance [Remix]</div>
+        <div class="pause" onclick="togglePlay()">🔇</div>
+        <div class="player">
+            <audio class="audio" src="BUNT x VisionV  Renaissance Remix Visualizer.mp3" autoplay type="audio" loop=""></audio>
+        </div>
+    
+    </div>
     <div id="description2">
-        <p class="intro">Here are some of the few school projects I have done during the time period of 2020 until now. My projects are varied in that some can be categorized as graphic design focused, due to my initial start in graphic design and some others a varity of game design projects, virtual and physical alike, with of course some sprinkle of miscellanous projects that pertain to my field; like sound editing: </p>
+        <p class="intro">Here are some of the few personal projects I have done until now. My projects are varied in that some can be categorized as graphic design focused, due to my initial start in graphic design and some others a varity of game design projects, virtual and physical alike, with of course some sprinkle of miscellanous projects that pertain to my field or just to experiment: </p>
         <div id="photos">
             <div id="Carousel" class="f-carousel">
-                <div class="f-carousel__slide"><img id="alien" src="invaders.jpg"></div>
-                <div class="f-carousel__slide"><img id="circle" src="me.jpg"></div>
-                <div class="f-carousel__slide"><img id="chicken" src="chicken.gif"></div>
+                <div class="f-carousel__slide"><img src="gamedesign1.jpg"><h2>Veni Vidi Vici</h2></div>
+                <div class="f-carousel__slide"><img src="controler.jpg"><h2>Brain Tetris</h2></div>
+                <div class="f-carousel__slide"><img src="skin.jpg"><h2>Skin mod</h2></div>
+                <div class="f-carousel__slide"><video width="300px" height="175px" autoplay controls loop preload="auto">  <source src="video.MOV" type="video/mp4"></video><h2>Conceptual gameplay</h2></div>
             </div>        
         </div>
-        <p id="projectedtext"> Description of the project(s), hopefully that switch with the picture. </p>
+    
+       <p class="projectedtext"><b>Veni Vidi Vici</b> <br>a board game inspired by the games Risk and trivia pursuit. Conquer territories through the use of your worldly funfacts or use your luck in die to steal from your opponents.</p>
+        <p class="projectedtext"><b>Brain Tetris</b> <br> this is the name my classmate and I decided on a self designed and made controller in a UI/UX class. The concept of this remote is to enable game play with only having to move from neck up with the use of input sensors in front of said player's face. Used with Makey-Makey kit.</p>
+        <p class="projectedtext"><b>Skin mod</b> <br>Class project done with classmates which involve the use of photoshop and After effects, as well as a third party website to code in the new skins as a mod for a figthing game. Use of Switch console and Super Smash Bros Ultimate. </p>
+        <p class="projectedtext"><b>Conceptual gameplay</b><br>Visual record of my friend's conceptual gameplay of the sketch of a game in making.</p>
     </div>
 
 </main>
@@ -69,6 +81,20 @@
     const container = document.getElementById("Carousel");
     const options = { infinite: false };
     new Carousel(container, options);
+
+var pause = document.querySelector(".pause");
+var audio = document.querySelector(".audio");
+
+function togglePlay() {
+	if (audio.paused) {
+		audio.play();
+		pause.innerHTML = "🔇";
+	} else {
+		audio.pause();
+		pause.innerHTML = "🔊";
+		pause.style.color = " #848484";
+	}
+}
 
 </script>
   </body>

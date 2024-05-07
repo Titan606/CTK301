@@ -38,16 +38,28 @@
 
 <main id="personal">
 
+    <div class="song">
+        <div class="title">Downside Up - DROELOE</div>
+        <div class="pause" onclick="togglePlay()">🔇</div>
+        <div class="player">
+            <audio class="audio" src="DownsideUPDROELOE.mp3" autoplay type="audio" loop=""></audio>
+        </div>
+    
+    </div>
+
     <div id="description2">
         <p class="intro">Here are some of the few personal projects I have done until now. My projects are varied in that some can be categorized as graphic design focused, due to my initial start in graphic design and some others a varity of game design projects, virtual and physical alike, with of course some sprinkle of miscellanous projects that pertain to my field or just to experiment: </p>
         <div id="photos">
             <div id="Carousel" class="f-carousel">
-                <div class="f-carousel__slide"><img id="alien" src="invaders.jpg"></div>
-                <div class="f-carousel__slide"><img id="circle" src="me.jpg"></div>
-                <div class="f-carousel__slide"><img id="chicken" src="chicken.gif"></div>
+                <div class="f-carousel__slide"><img src="artpicture.jpg"><h2>"Chicago Station"</h2></div>
+                <div class="f-carousel__slide"><img src="personal.jpg"><h2>"Art drawing"</h2></div>
+                <div class="f-carousel__slide"><img src="nice.jpg"><h2>"Nice"</h2></div>
             </div>        
         </div>
-        <p id="projectedtext"> Description of the project(s), hopefully that switch with the picture. </p>
+        <p class="projectedtext"><b>"Chicago Station"</b> <br>Chicago station picture I took while visiting the loop.</p>
+        <p class="projectedtext"><b>"Art Drawing"</b><br>Drawing of a wizard making a portal to a video game. The motivation was to do a visual representation of the "teleporting to another world" when gaming.</p>
+        <p class="projectedtext"><b>"Nice"</b><br>Me feeling myself</p>
+
     </div>
 
 </main>
@@ -69,6 +81,20 @@
     const container = document.getElementById("Carousel");
     const options = { infinite: false };
     new Carousel(container, options);
+
+    var pause = document.querySelector(".pause");
+var audio = document.querySelector(".audio");
+
+function togglePlay() {
+	if (audio.paused) {
+		audio.play();
+		pause.innerHTML = "🔇";
+	} else {
+		audio.pause();
+		pause.innerHTML = "🔊";
+		pause.style.color = " #848484";
+	}
+}
 
 </script>
   </body>

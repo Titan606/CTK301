@@ -19,6 +19,12 @@ h3 {
     color: gold;
 }
 
+#aboutme {
+  padding: 15px;
+  color: white;
+
+}
+
 #leftnav{
     grid-column: span 2;
     width: max-content;
@@ -41,6 +47,7 @@ h3 {
 
 #lefbanner {
     grid-column: span 2;
+    height: 75%;
 }
 
 #midheader {
@@ -77,7 +84,7 @@ text-align: center;
     color: whitesmoke;
 }
 main {
-    background-color: rgb(79, 79, 150);
+    background: url("cyanwood.jpeg");
     grid-column: span 8;
     text-align: justify;
 }
@@ -146,7 +153,7 @@ img {
 
 #leftbanner {
     grid-column: span 2;
-    grid-row: span 6;
+    height: 75%;
 }
 
 
@@ -168,18 +175,25 @@ img {
     padding: 50px;
 }
 
-#projectedtext {
+.projectedtext {
     background-color: rgb(206, 170, 78,0.8);
-    padding: 100px;
+    padding: 50px;
     color: black;
     border: 3px solid gold;
     border-radius: 3px;
+    width: 25%;
+    align-content: center;
+    margin-left: 34%;
+    margin-right: 25%;
 }
 
 .intro {
     background-color: rgb(18, 18, 147,0.8);
     border: 3px solid gold;
     border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 25px;
     color: gold;
 }
@@ -216,46 +230,46 @@ img {
 
   #Carousel {
     margin-bottom: 24px;
+    background-color: rgba(29, 12, 158, 0.8);
+    border: solid 3px goldenrod;
   }
   
 #Carousel .f-carousel__slide {
     text-align: center;
     padding: 24px;
     background: none;
+    height: fit-content;
+    width: fit-content;
   }
-
+#Carousel .f-carousel__slide h2 {
+background:none;
+}
 #description{
     grid-column: span 4;
+    border: groove 10px goldenrod;
+    background-color: rgb(142, 108, 21);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
 }
 
 #description p {
-margin-left: 100px;
-margin-right: 100px;
 font-family: Verdana, Tahoma, sans-serif;
 align-content: center;
-}
 
-#description2 ul 
-{
-    /*background-color: rgb(17, 17, 123,0.8);*/
-    color: gold;
-    list-style: none;
 }
 
 #description2{
     grid-column: span 4;
-    align-content: center;
 }
 
 #description2 p {
-margin-left: 400px;
-margin-right: 400px;
 font-family: Verdana, Tahoma, sans-serif;
-align-content: center;
 }
 
 #rightbanner {
     grid-column: span 2;
+    height: 75%;
 }
 
 footer {
@@ -425,3 +439,63 @@ h2 {
   }
 
 /* Send Button Styles */
+
+/* 3D carousel Homepage */
+div#carousel { 
+    perspective: 1200px; 
+    background: none;
+    border-radius: 25px; 
+    padding-top: 10%; 
+    font-size:0; 
+    margin-bottom: 3rem; 
+    overflow: hidden; 
+  }
+  figure#spinner { 
+    transform-style: preserve-3d; 
+    height: 300px; 
+    transform-origin: 50% 50% -500px; 
+    transition: 1s; 
+  } 
+  figure#spinner img { 
+    width: 40%; max-width: 275px; 
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline:1px solid transparent; 
+  }
+  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+  }
+  figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+  figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+  figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+  figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+  figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+  figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+  figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+  div#carousel ~ span { 
+    color: black; 
+    margin: 5%; 
+    display: inline-block; 
+    text-decoration: none; 
+    font-size: 4rem; 
+    transition: 0.6s color; 
+    position: relative; 
+    margin-top: -6rem; 
+    border-bottom: none; 
+    line-height: 0; }
+  div#carousel ~ span:hover { color: gold; cursor: pointer; }
+
+  /* autoplay music */
+
+  .song {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: "Roboto";
+    color: white;
+    background-color: rgba(13, 13, 94, 0.585);
+  }
+  .pause {
+    margin-left: 0.5em;
+    cursor:pointer;
+  }
+  

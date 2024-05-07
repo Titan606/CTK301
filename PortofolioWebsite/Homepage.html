@@ -40,16 +40,38 @@
             <img src="forest.gif" alt="water">
     </div>
 <main>
+    <div class="song">
+        <div class="title">Swan Lake, Op. 20, Act 2: Scene (Moderato), by Pyotr Ilyich Tchaikovsky</div>
+        <div class="pause" onclick="togglePlay()">🔇</div>
+        <div class="player">
+            <audio class="audio" src="SwanLake.mp3" autoplay type="audio" loop=""></audio>
+        </div>
+    
+    </div>
     <div id="photos">
-        <div id="myCarousel" class="f-carousel">
-            <div class="f-carousel__slide"><img id="alien" src="invaders.jpg"></div>
-            <div class="f-carousel__slide"><img id="circle" src="me.jpg"></div>
-            <div class="f-carousel__slide"><img id="chicken" src="chicken.gif"></div>
-        </div>        
+        <div id="carousel">
+            <figure id="spinner">
+              <img src="controler.jpg" alt>
+              <img src="hardmode.png" alt>
+              <img src="gamedesign1.jpg" alt>
+              <img src="personal.jpg" alt>
+              <img src="sketche.jpg" alt>
+              <img src="skin.jpg" alt>
+              <img src="hardmode.png" alt>
+              <img src="artpicture.jpg" alt>
+            </figure>
+        </div>
+          <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+          <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>       
     </div>
     <div id="description">
-        <p> The headache wouldn't go away. She's taken medicine but even that didn't help. The monstrous throbbing in her head continued. She had this happen to her only once before in her life and she realized that only one thing could be happening. They had always called it the green river. It made sense. The river was green. The river likely had a different official name, but to everyone in town, it was and had always been the green river. So it was with great surprise that on this day the green river was a fluorescent pink.It was difficult to explain to them how the diagnosis of certain death had actually given him life. While everyone around him was in tears and upset, he actually felt more at ease. The doctor said it would be less than a year. That gave him a year to live, something he'd failed to do with his daily drudgery of a routine that had passed as life until then.It was difficult to explain to them how the diagnosis of certain death had actually given him life. While everyone around him was in tears and upset, he actually felt more at ease.</p>
-        <p> They argue. While the argument seems to be different the truth is it's always the same. Yes, the topic may be different or the circumstances, but when all said and done, it all came back to the same thing. They both knew it, but neither has the courage or strength to address the underlying issue. So they continue to argue. It was difficult to explain to them how the diagnosis of certain death had actually given him life. While everyone around him was in tears and upset, he actually felt more at ease. The doctor said it would be less than a year. That gave him a year to live, something he'd failed to do with his daily drudgery of a routine that had passed as life until then.</p>
+        <p id="aboutme"> Chemical Engineer aspirant turned Game Designer, I have had quick the roller coaster in life; being in the National Guard adding excitement in a monthly basis. 
+        <br>
+        I was born in Paris, France, where I grew up and lived until I moved to New York, USA then finally to Illinois USA where I currently reside.
+        <br>
+        Recently started dipping my toes in Game Designing, here is a website with some of my projects, whether school or personal.
+        If you wish to contact me about anything whether you feel I may have offended your eyes with my projects or on the contrary feel curious about how I ended up making my projects work, please click the link "CONTACTS" at the bottom of the page showing you where to contact me.
+        </p>
     </div>
 </main>
 <div id="rightbanner">
@@ -67,11 +89,27 @@
 </div>
 
 <script>   
-    Fancybox.bind("[data-fancybox]", {});
+    var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
 
-    const container = document.getElementById("myCarousel");
-    const options = { infinite: false };
-    new Carousel(container, options);
+var pause = document.querySelector(".pause");
+var audio = document.querySelector(".audio");
+
+function togglePlay() {
+	if (audio.paused) {
+		audio.play();
+		pause.innerHTML = "🔇";
+	} else {
+		audio.pause();
+		pause.innerHTML = "🔊";
+		pause.style.color = " #848484";
+	}
+}
+
 
 </script>
   </body>
